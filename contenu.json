@@ -1,0 +1,355 @@
+{
+ "domaines": {
+  "clinique": "Suivi clinique et médication",
+  "logement": "Logement et vie quotidienne",
+  "budget": "Gestion budgétaire et démarches",
+  "addictions": "Abus de substances",
+  "crise": "Gestion de crise et sécurité",
+  "insertion": "Activités et insertion",
+  "retablissement": "Projet de vie et rétablissement",
+  "lien": "Réseau social et entourage"
+ },
+ "niveaux": {
+  "1": "Besoin léger",
+  "2": "Besoin modéré",
+  "3": "Besoin intensif",
+  "4": "Crise"
+ },
+ "categories": {
+  "sanitaire": "Sanitaire",
+  "medicosocial": "Médico-social",
+  "social": "Social et inclusion",
+  "entraide": "Entraide et pair-aidance",
+  "logement": "Logement et hébergement",
+  "coordination": "Coordination et appui"
+ },
+ "secteursSIIS": {
+  "EMI": [
+   11,
+   12
+  ],
+  "SIDIIS": [
+   8,
+   9,
+   10
+  ]
+ },
+ "parcours": [
+  {
+   "id": "farida",
+   "nom": "Farida",
+   "resume": "Hospitalisations fréquentes, sans médecin traitant depuis deux ans. Accompagnement logement et suivi intensif menés en parallèle sans coordination formalisée, jusqu'à la signature du bail.",
+   "chiffres": {
+    "etapes": 7,
+    "dispositifs": 25,
+    "outils": 5,
+    "irritants": 12
+   },
+   "etapes": [
+    [
+     "Hospitalisation",
+     "Hospitalisations fréquentes."
+    ],
+    [
+     "Hébergement précaire",
+     "Farida vit chez une amie depuis huit mois, la situation doit se résoudre dans les deux mois."
+    ],
+    [
+     "Suivi en cours, continuité des soins et somatique",
+     "Accompagnement médico-social intensif depuis huit mois. Pas de médecin traitant depuis deux ans."
+    ],
+    [
+     "Intermédiation locative mobilisée en parallèle",
+     "Un accompagnement logement indispensable au bailleur est mené parallèlement au suivi intensif, sans coordination ni protocole commun."
+    ],
+    [
+     "Suivi en cours, lien social et vie quotidienne",
+     "Difficultés à gérer ses finances au quotidien. Bénévolat deux matins par semaine depuis deux mois."
+    ],
+    [
+     "Logement accessible",
+     "L'IML demande au suivi intensif de clarifier qui porte la responsabilité une fois le bail signé."
+    ],
+    [
+     "Signature du bail et suivi post-bail",
+     "La signature est imminente. La transition vers un logement autonome soulève des questions pratiques."
+    ]
+   ],
+   "doublon": "Doublon possible entre Coc'Home et SIIS sur le volet accompagnement logement, cité deux fois de façon identique dans la source."
+  },
+  {
+   "id": "nadia",
+   "nom": "Nadia",
+   "resume": "Vit à la rue depuis plusieurs années, polyconsommation active. Renvois croisés entre psychiatrie et addictologie, refus des structures d'hébergement, démarches administratives bloquées.",
+   "chiffres": {
+    "etapes": 7,
+    "dispositifs": 26,
+    "outils": 6,
+    "irritants": 9
+   },
+   "etapes": [
+    [
+     "Errance et crises répétées à la rue",
+     "Polyconsommatrice active. Agressions sexuelles répétées, aucun suivi médical ni gynécologique."
+    ],
+    [
+     "Sortie d'hospitalisation sans filet",
+     "Aucun logement, aucun relais, mesure de protection non fonctionnelle. Retour à la rue."
+    ],
+    [
+     "Tentative d'accès à l'hébergement",
+     "Les structures refusent : profil jugé trop instable, consommation active."
+    ],
+    [
+     "Refus croisé entre dispositifs",
+     "La psychiatrie renvoie vers l'addictologie. L'addictologie renvoie vers la psychiatrie."
+    ],
+    [
+     "Première approche",
+     "Un premier lien de confiance se crée progressivement."
+    ],
+    [
+     "Démarches bloquées",
+     "CNI expirée, pas de domiciliation, mesure de protection non fonctionnelle. Les agressions continuent."
+    ],
+    [
+     "Stabilisation fragile",
+     "Un logement est obtenu. Rechutes, problèmes judiciaires, mesure de protection à redéfinir. Toujours pas de suivi gynécologique."
+    ]
+   ],
+   "doublon": "Aucun doublon signalé. La rubrique du gabarit d'atelier est vide pour ce parcours."
+  },
+  {
+   "id": "sylvie",
+   "nom": "Sylvie",
+   "resume": "Vit seule et stabilisée depuis deux ans. Rupture de contact progressive non détectée faute d'alerte formalisée, aboutissant à une quatrième hospitalisation sous contrainte en dix-huit mois.",
+   "chiffres": {
+    "etapes": 8,
+    "dispositifs": 23,
+    "outils": 7,
+    "irritants": 8
+   },
+   "etapes": [
+    [
+     "Vie stabilisée en communauté",
+     "Appartement depuis deux ans, activités sociales régulières, consultations au CMP, IDEL pour les injections."
+    ],
+    [
+     "Premiers signes de fragilisation",
+     "Espacement des rendez-vous. Aucun mécanisme d'alerte formalisé entre ses différents contacts."
+    ],
+    [
+     "Refus de contact",
+     "Refuse visites et appels depuis trois semaines. Lien avec le GEM rompu. Aucune directive anticipée."
+    ],
+    [
+     "Crise, HDT, admission",
+     "Quatrième hospitalisation sous contrainte en dix-huit mois. Dossier absent à l'admission, tutrice non prévenue dans les 24 heures."
+    ],
+    [
+     "Hospitalisation, continuité médicamenteuse et somatique",
+     "Traitement injectable mensuel. Douleurs dentaires signalées depuis plusieurs mois."
+    ],
+    [
+     "Hospitalisation, lien social et vie quotidienne",
+     "Ne quitte plus sa chambre. Niveau d'autonomie pour les gestes du quotidien non évalué."
+    ],
+    [
+     "Préparation de la sortie",
+     "Aucun protocole de sortie formalisé. La préparation n'a pas commencé."
+    ],
+    [
+     "Retour à domicile",
+     "Non documenté dans le matériau source à ce stade."
+    ]
+   ],
+   "doublon": "Doublon potentiel à valider entre CMP et SIIS, cité deux fois dans la source mais avec un point d'interrogation."
+  },
+  {
+   "id": "vincent",
+   "nom": "Vincent",
+   "resume": "Hospitalisé depuis six mois. Désaccord clinique entre l'équipe SIIS et le psychiatre référent sur la sortie, sans instance pour trancher, alors qu'un logement est prêt.",
+   "chiffres": {
+    "etapes": 8,
+    "dispositifs": 20,
+    "outils": 12,
+    "irritants": 12
+   },
+   "etapes": [
+    [
+     "Refus de soins et hospitalisation",
+     "Refuse la médication et les rendez-vous médicaux."
+    ],
+    [
+     "Hospitalisation en cours",
+     "Hospitalisé depuis six mois. L'infirmière SIDIIS le visite régulièrement."
+    ],
+    [
+     "Stabilisation clinique constatée",
+     "L'équipe SIDIIS estime Vincent prêt pour une sortie. Un T1 est disponible, le bail est prêt."
+    ],
+    [
+     "Continuité des soins et somatique",
+     "Douze kilos pris depuis l'hospitalisation, douleurs lombaires non explorées. Médecin généraliste non contacté depuis l'admission."
+    ],
+    [
+     "Lien social et vie quotidienne",
+     "Plus de gestes du quotidien depuis six mois. Budget et démarches non gérés, carte d'identité à renouveler."
+    ],
+    [
+     "Refus de sortie, absence d'arbitrage",
+     "Le psychiatre refuse la sortie. SIDIIS et psychiatre ne partagent pas le même constat. Le bail risque d'être perdu. Aucune instance ne permet de trancher."
+    ],
+    [
+     "Préparation de la sortie",
+     "Sortie conditionnée à un accord conjoint. La continuité médicamenteuse post-hospitalisation n'est pas organisée."
+    ],
+    [
+     "Sortie de l'hôpital",
+     "Les besoins médicaux et sociaux diminuent."
+    ]
+   ],
+   "doublon": "Aucun doublon signalé. La rubrique du gabarit d'atelier est absente pour ce parcours."
+  }
+ ],
+ "irritants": [
+  {
+   "rang": 1,
+   "titre": "Coordination et communication entre acteurs et équipes",
+   "occ": 11,
+   "fam": "Organisationnel",
+   "texte": "Les équipes se connaissent parfois mal d'un secteur à l'autre entre CMP, hospitalisation et ambulatoire. Ce manque d'interconnaissance complique l'identification des rôles et ralentit les décisions, notamment en cas de désaccord clinique.",
+   "cit": [
+    "L'équipe soignante hospitalière et celle de suivi ambulatoire ne se connaissent pas.",
+    "La psychiatrie renvoie vers l'addictologie. L'addictologie renvoie vers la psychiatrie.",
+    "Aucune instance ne permet de trancher le désaccord clinique sur la sortie."
+   ],
+   "bp": [
+    "Plénière SIIS Santé mentale réunissant EMI et SIDIIS pour partager les retours terrain et suivre un plan d'action commun.",
+    "Groupes métier et staff days pour développer une culture commune entre équipes.",
+    "Formalisation des processus cliniques et validation collective en plénière."
+   ],
+   "piste": "Piste non renseignée dans le support de restitution."
+  },
+  {
+   "rang": 2,
+   "titre": "Accès au logement et à l'hébergement adapté",
+   "occ": 8,
+   "fam": "Structurelle",
+   "texte": "Deuxième irritant le plus cité, présent dans trois des quatre parcours. Les délais sont longs, les places rares, et l'articulation entre le suivi intensif et l'accompagnement logement manque de protocole commun, au point que la question de savoir qui porte la responsabilité une fois le bail signé reste posée jusqu'au bout.",
+   "cit": [
+    "Années d'attente : quatre ans.",
+    "Manque de place d'hébergements et de logements adaptés.",
+    "Le SAMSAH n'intervient pas si pas de logement pérenne, y compris IML."
+   ],
+   "bp": [
+    "Intermédiation locative spécialisée IML Santé Mentale Coc'Home déjà mobilisée en parallèle du suivi intensif dans le parcours de Farida.",
+    "Chez Vincent, une fois le logement trouvé, SIDIIS concerte l'équipe médico-sociale et le projet de vie avant la signature du bail.",
+    "Un modèle de médiation locative avec avance de loyers observé sur le dispositif équivalent à Toulouse, HOME porté par l'UCRM."
+   ],
+   "piste": "Davantage de places d'hébergement et de logements adaptés, développement de micro-structures globales, maintien de l'hébergement sous conditions plutôt que rupture sèche."
+  },
+  {
+   "rang": 3,
+   "titre": "Ressources humaines formées et disponibles",
+   "occ": 5,
+   "fam": "Organisationnel",
+   "texte": "Le manque de professionnels formés et disponibles freine plusieurs étapes du parcours : accompagnement médico-social, tutelle et curatelle, ou relais de proximité une fois l'intensité des soins diminuée.",
+   "cit": [
+    "Manque de tuteurs, curateurs de qualité et accessibles.",
+    "Les structures sont plus ou moins saturées.",
+    "Pénurie des Maisons Départementales des Solidarités."
+   ],
+   "bp": [
+    "Formations au rétablissement CoFoR déjà mobilisées dans plusieurs parcours.",
+    "Rehab++, dispositif d'acquisition de l'autonomie en axe rétablissement, déjà en place pour Sylvie.",
+    "A3 UNAFAM et LACDAM pour la formation et le soutien aux aidants.",
+    "Plan d'action 2025-2027 du SIIS, suite à l'évaluation de fidélité au modèle ACT, TMACT avril 2024."
+   ],
+   "piste": "Piste non renseignée dans le support de restitution."
+  },
+  {
+   "rang": 4,
+   "titre": "Manque de préparation à la sortie d'hospitalisation",
+   "occ": 4,
+   "fam": "Vécue par le patient",
+   "texte": "La rupture la plus systématique : elle apparaît dans les quatre parcours étudiés, sans exception. Le retour en ville se fait souvent sans relais organisé, faute de protocole formalisé, de médecin traitant identifié ou de transmission construite avec la ville.",
+   "cit": [
+    "Sortie d'hospitalisation sans filet.",
+    "Pas de médecin traitant depuis deux ans.",
+    "Aucun protocole de sortie n'est formalisé."
+   ],
+   "bp": [
+    "Mécanisme de coordination mis en place pour Vincent : rencontre à 48 heures avec l'équipe hospitalière, staff consigné, réunions de coordination clinique.",
+    "Lettre de liaison adressée à la médecine de ville dans les 48 heures suivant la sortie, déjà pratiquée dans le parcours de Sylvie."
+   ],
+   "piste": "Assurer la continuité de l'accompagnement à partir du professionnel qui a établi un lien de confiance avec la personne, plutôt que de repartir de zéro à chaque étape."
+  },
+  {
+   "rang": 5,
+   "titre": "Outils partagés et interopérabilité",
+   "occ": 4,
+   "fam": "Organisationnel",
+   "texte": "Les deux équipes s'appuient sur des systèmes d'information distincts et peinent à partager une culture commune de l'outil avec leurs partenaires. Le document d'anticipation partagé n'est pas systématiquement pris en compte.",
+   "cit": [
+    "Manque d'interopérabilité.",
+    "Absence de culture commune de l'outil.",
+    "Dossier absent à l'admission, tutrice non prévenue dans les 24 heures."
+   ],
+   "bp": [
+    "Système d'information Tagalis, logiciel métier certifié HDS, déployé et alimenté quotidiennement par les deux équipes.",
+    "Piste évoquée : déployer un dossier de coordination commun, DMP, DAP, plan de soin partagé, et former l'ensemble des partenaires à son usage."
+   ],
+   "piste": "Réflexion en cours côté SIDIIS pour centraliser les données entre logiciel métier et drive partagé, afin de réduire la dispersion de l'information."
+  },
+  {
+   "rang": 6,
+   "titre": "Stigmatisation et accès au droit commun",
+   "occ": 4,
+   "fam": "Vécue par le patient",
+   "texte": "La stigmatisation du patient psychiatrique freine l'accès aux soins de droit commun, somatiques et gynécologiques, autant que l'accès administratif aux droits. Le dispositif mon parcours psy n'est pas remboursé par la CPAM pour les patients orientés par un psychiatre.",
+   "cit": [
+    "Stigmatisation du patient psy : difficulté d'accès au droit en général, somatique, gynécologique.",
+    "Pas de prise en charge remboursée pour les consultations mon parcours psy.",
+    "Offre de soins spécialisés, TCC, EMDR psychotrauma, peu identifiée et peu accessible."
+   ],
+   "bp": [
+    "Accompagnements physiques vers les lieux de soins assurés par les équipes mobiles dédiées, pour limiter l'effet de la stigmatisation à l'accueil."
+   ],
+   "piste": "Négocier avec la CPAM une prise en charge dédiée des consultations mon parcours psy. Sensibiliser les professionnels de santé de ville à l'accueil des patients psy."
+  },
+  {
+   "rang": 7,
+   "titre": "Inégalités et priorisation territoriale",
+   "occ": 2,
+   "fam": "Structurelle",
+   "texte": "Au-delà des irritants liés aux pratiques professionnelles, le parcours de Nadia signale une inégalité de répartition territoriale des dispositifs à Marseille, associée à une absence de fléchage prioritaire au SIAO pour les publics à la croisée précarité et psychiatrie.",
+   "cit": [
+    "La répartition des dispositifs sur tous les territoires marseillais n'est pas toujours équitable.",
+    "Pas de priorisation ni de fléchage SIAO."
+   ],
+   "bp": [
+    "Généralisation des équipes de suivi intensif envisagée en atelier comme levier d'homogénéité de l'offre de services au sein des territoires."
+   ],
+   "piste": "Établir une grille de priorisation partagée au SIAO pour les publics à la croisée précarité et psychiatrie. Rééquilibrer l'offre entre arrondissements."
+  }
+ ],
+ "complementarites": [
+  [
+   "Suivi intensif × accompagnement logement",
+   "L'accompagnement vers le logement, HAS, Soliha, peut être mené en parallèle du suivi intensif, jusqu'à la signature du bail."
+  ],
+  [
+   "Équipes aller-vers × suivi psychiatrique",
+   "Des équipes de type MARSS et Nouvelle Aube assurent un premier contact de rue qui prépare l'entrée en suivi psychiatrique et addictologique."
+  ],
+  [
+   "CMP × réseau associatif local",
+   "Le CMP peut s'articuler avec le GEM et le Réseau Santé Mentale et Habitat pour le maintien du lien social."
+  ],
+  [
+   "Suivi intensif × logement accompagné en amont de la sortie",
+   "La recherche de logement, Résidence Marabou, CocoVelten, peut être engagée en parallèle d'une hospitalisation, en anticipation de la sortie."
+  ]
+ ]
+}

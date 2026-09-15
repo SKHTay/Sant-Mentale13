@@ -1,0 +1,2935 @@
+{
+ "meta": {
+  "titre": "Cartographie de l'écosystème santé mentale — Marseille",
+  "perimetre": "Marseille intra-muros",
+  "maj": "2026-09-15",
+  "sources": [
+   "Kit Ressources DAC 13 Sud, 07/05/2026",
+   "SIIS Cartographie de l'offre, 11/05/2026",
+   "Atelier de cartographie SIIS, 4 parcours patients"
+  ],
+  "avertissement": "Recensement non exhaustif. Version de travail à consolider avec les acteurs du territoire."
+ },
+ "dispositifs": [
+  {
+   "n": "EMI — Équipe Mobile Inclusive",
+   "p": "CMSMH",
+   "c": "medicosocial",
+   "dm": [
+    "clinique",
+    "logement",
+    "budget",
+    "crise",
+    "insertion",
+    "retablissement",
+    "lien"
+   ],
+   "t": "mobile",
+   "a": null,
+   "cov": [
+    11,
+    12
+   ],
+   "lv": [
+    3
+   ],
+   "tel": "07 64 43 44 38",
+   "note": "Secteurs 13G07 et 13G08 du CH Valvert. Aussi Allauch, Plan-de-Cuques, La Penne-sur-Huveaune. Personnes sans domicile nées entre le 7 juin et le 28 juillet.",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "SIDIIS — Suivi Intensif pour la DésInstitutionnalisation et l'Inclusion Sociale",
+   "p": "Groupe SOS Solidarités",
+   "c": "medicosocial",
+   "dm": [
+    "clinique",
+    "logement",
+    "budget",
+    "crise",
+    "insertion",
+    "retablissement",
+    "lien"
+   ],
+   "t": "mobile",
+   "a": null,
+   "cov": [
+    8,
+    9,
+    10
+   ],
+   "lv": [
+    3
+   ],
+   "tel": "06 79 91 10 55",
+   "note": "Secteurs 13G01, 13G05 et 13G06 du CHU Sainte-Marguerite. Personnes sans domicile nées entre le 1er et le 26 janvier et entre le 15 avril et le 6 juin.",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "CMP Pressensé",
+   "p": "CH Édouard Toulouse",
+   "c": "sanitaire",
+   "dm": [
+    "clinique"
+   ],
+   "t": "lieu",
+   "a": 1,
+   "cov": [
+    1,
+    2
+   ],
+   "lv": [
+    2
+   ],
+   "tel": "04 91 90 01 28",
+   "note": "Secteur 13G11.",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "CMP Belle de Mai",
+   "p": "CH Édouard Toulouse",
+   "c": "sanitaire",
+   "dm": [
+    "clinique"
+   ],
+   "t": "lieu",
+   "a": 3,
+   "cov": [
+    2,
+    3
+   ],
+   "lv": [
+    2
+   ],
+   "tel": "04 91 50 20 37",
+   "note": "Secteur 13G12.",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "CMP Lafon — service du Dr Chabannes",
+   "p": "AP-HM",
+   "c": "sanitaire",
+   "dm": [
+    "clinique"
+   ],
+   "t": "lieu",
+   "a": 6,
+   "cov": [
+    4
+   ],
+   "lv": [
+    2
+   ],
+   "ad": "9 rue Lafon, 13006",
+   "tel": "04 91 43 59 13",
+   "note": "Secteur 13G04.",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "CMP Lafon — service du Dr Dassa",
+   "p": "AP-HM",
+   "c": "sanitaire",
+   "dm": [
+    "clinique"
+   ],
+   "t": "lieu",
+   "a": 6,
+   "cov": [
+    5,
+    6
+   ],
+   "lv": [
+    2
+   ],
+   "ad": "9 rue Lafon, 13006",
+   "tel": "04 91 43 59 25",
+   "note": "Secteur 13G02.",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "CMP Lafon — service du Dr Zendjidjian",
+   "p": "AP-HM",
+   "c": "sanitaire",
+   "dm": [
+    "clinique"
+   ],
+   "t": "lieu",
+   "a": 6,
+   "cov": [
+    6,
+    7
+   ],
+   "lv": [
+    2
+   ],
+   "ad": "9 rue Lafon, 13006",
+   "tel": "04 91 38 00 00",
+   "note": "Secteur 13G03.",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "Consultation Pôle Solaris",
+   "p": "AP-HM",
+   "c": "sanitaire",
+   "dm": [
+    "clinique"
+   ],
+   "t": "lieu",
+   "a": 9,
+   "cov": [
+    8
+   ],
+   "lv": [
+    2
+   ],
+   "tel": "04 91 74 40 82",
+   "note": "Secteur 13G05, service du Pr Azorin.",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "Consultation Pôle Psychiatrie Centre",
+   "p": "AP-HM",
+   "c": "sanitaire",
+   "dm": [
+    "clinique"
+   ],
+   "t": "lieu",
+   "a": null,
+   "cov": [
+    9
+   ],
+   "lv": [
+    2
+   ],
+   "tel": "04 91 43 55 52",
+   "note": "Secteur 13G06, service du Pr Lançon. Implantation à préciser.",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "CMP Sainte-Baume",
+   "p": "AP-HM",
+   "c": "sanitaire",
+   "dm": [
+    "clinique"
+   ],
+   "t": "lieu",
+   "a": 10,
+   "cov": [
+    10
+   ],
+   "lv": [
+    2
+   ],
+   "tel": "04 91 38 54 60",
+   "note": "Secteur 13G01.",
+   "src": "SIIS Cartographie de l'offre, 11/05/2026"
+  },
+  {
+   "n": "CMP Saint-Marcel",
+   "p": "CH Valvert",
+   "c": "sanitaire",
+   "dm": [
+    "clinique"
+   ],
+   "t": "lieu",
+   "a": 11,
+   "cov": [
+    11
+   ],
+   "lv": [
+    2
+   ],
+   "tel": "04 91 35 74 92",
+   "note": "Secteur 13G07.",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "CMP Saint-Barnabé",
+   "p": "CH Valvert",
+   "c": "sanitaire",
+   "dm": [
+    "clinique"
+   ],
+   "t": "lieu",
+   "a": 12,
+   "cov": [
+    12
+   ],
+   "lv": [
+    2
+   ],
+   "tel": "04 91 93 95 30",
+   "note": "Secteur 13G08.",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "CMP Secteur 13",
+   "p": "CH Édouard Toulouse",
+   "c": "sanitaire",
+   "dm": [
+    "clinique"
+   ],
+   "t": "lieu",
+   "a": 13,
+   "cov": [
+    13
+   ],
+   "lv": [
+    2
+   ],
+   "tel": "04 91 70 90 72",
+   "note": "Secteur 13G13.",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "CMP Marine Blanche",
+   "p": "CH Édouard Toulouse",
+   "c": "sanitaire",
+   "dm": [
+    "clinique"
+   ],
+   "t": "lieu",
+   "a": 14,
+   "cov": [
+    14
+   ],
+   "lv": [
+    2
+   ],
+   "tel": "04 91 11 64 70",
+   "note": "Secteur 13G14.",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "CMP La Viste",
+   "p": "CH Édouard Toulouse",
+   "c": "sanitaire",
+   "dm": [
+    "clinique"
+   ],
+   "t": "lieu",
+   "a": 15,
+   "cov": [
+    15
+   ],
+   "lv": [
+    2
+   ],
+   "tel": "04 91 60 44 43",
+   "note": "Secteur 13G15.",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "CMP Le Parc",
+   "p": "CH Édouard Toulouse",
+   "c": "sanitaire",
+   "dm": [
+    "clinique"
+   ],
+   "t": "lieu",
+   "a": null,
+   "cov": [
+    15,
+    16
+   ],
+   "lv": [
+    2
+   ],
+   "tel": "04 91 03 09 95",
+   "note": "Secteur 13G16. Implantation à préciser.",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "HDJ Gasquy",
+   "p": "CH Valvert",
+   "c": "sanitaire",
+   "dm": [
+    "clinique",
+    "retablissement"
+   ],
+   "t": "lieu",
+   "a": 12,
+   "cov": [
+    12
+   ],
+   "lv": [
+    2
+   ],
+   "ad": "2 boulevard Gasquy, 13012",
+   "tel": "04 91 85 00 12",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "HDJ L'Escale",
+   "p": "CH Valvert",
+   "c": "sanitaire",
+   "dm": [
+    "clinique",
+    "retablissement"
+   ],
+   "t": "lieu",
+   "a": 11,
+   "cov": [
+    11
+   ],
+   "lv": [
+    2
+   ],
+   "ad": "78 boulevard des Libérateurs, 13011",
+   "tel": "04 91 87 67 55",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "HDJ Pressensé",
+   "p": "CH Édouard Toulouse",
+   "c": "sanitaire",
+   "dm": [
+    "clinique",
+    "retablissement"
+   ],
+   "t": "lieu",
+   "a": 15,
+   "cov": [
+    15
+   ],
+   "lv": [
+    2
+   ],
+   "ad": "118 chemin de Mimet, 13015",
+   "tel": "04 91 90 05 75",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "HDJ Camille Claudel",
+   "p": "CH Édouard Toulouse",
+   "c": "sanitaire",
+   "dm": [
+    "clinique",
+    "retablissement"
+   ],
+   "t": "lieu",
+   "a": 15,
+   "cov": [
+    15
+   ],
+   "lv": [
+    2
+   ],
+   "ad": "23 impasse Magne, 13015",
+   "tel": "04 91 09 70 22",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "HDJ Les Colombes",
+   "p": "CH Édouard Toulouse",
+   "c": "sanitaire",
+   "dm": [
+    "clinique",
+    "retablissement"
+   ],
+   "t": "lieu",
+   "a": 13,
+   "cov": [
+    13
+   ],
+   "lv": [
+    2
+   ],
+   "ad": "48 avenue de la Croix Rouge, 13013",
+   "tel": "04 91 06 36 06",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "HDJ Henri Collomb",
+   "p": "CH Édouard Toulouse",
+   "c": "sanitaire",
+   "dm": [
+    "clinique",
+    "retablissement"
+   ],
+   "t": "lieu",
+   "a": 15,
+   "cov": [
+    15
+   ],
+   "lv": [
+    2
+   ],
+   "ad": "161 avenue de la Viste, 13015",
+   "tel": "04 91 65 06 06",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "HDJ Balthazar Blanc",
+   "p": "CH Édouard Toulouse",
+   "c": "sanitaire",
+   "dm": [
+    "clinique",
+    "retablissement"
+   ],
+   "t": "lieu",
+   "a": 15,
+   "cov": [
+    15
+   ],
+   "lv": [
+    2
+   ],
+   "ad": "43 avenue de la Viste, 13015",
+   "tel": "04 91 03 12 82",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "CAP 48 — urgences psychiatriques",
+   "p": "AP-HM La Timone",
+   "c": "sanitaire",
+   "dm": [
+    "crise"
+   ],
+   "t": "lieu",
+   "a": 5,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    4
+   ],
+   "ad": "264 rue Saint-Pierre, 13005",
+   "tel": "04 13 42 93 00",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "CAP 72 — urgences psychiatriques",
+   "p": "AP-HM Hôpital Nord / CH Édouard Toulouse",
+   "c": "sanitaire",
+   "dm": [
+    "crise"
+   ],
+   "t": "lieu",
+   "a": 15,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    4
+   ],
+   "ad": "chemin des Bourrely, 13015",
+   "tel": "04 91 96 49 56",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "CACC — Centre d'Accueil et de Consultation de Crise",
+   "p": "CH Valvert",
+   "c": "sanitaire",
+   "dm": [
+    "crise"
+   ],
+   "t": "lieu",
+   "a": 11,
+   "cov": [
+    11,
+    12
+   ],
+   "lv": [
+    4
+   ],
+   "ad": "78 boulevard des Libérateurs, 13011",
+   "tel": "04 91 87 67 67",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "ULICE — unité locale d'intervention de crise",
+   "p": "AP-HM",
+   "c": "sanitaire",
+   "dm": [
+    "crise"
+   ],
+   "t": "mobile",
+   "a": null,
+   "cov": [
+    8,
+    9,
+    10
+   ],
+   "lv": [
+    4
+   ],
+   "tel": "06 89 85 34 83",
+   "note": "Modèle Open Dialogue, intervention à domicile. Évolutions annoncées, périmètre à préciser.",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "EMSI Centre-Ville",
+   "p": "CH Édouard Toulouse",
+   "c": "sanitaire",
+   "dm": [
+    "crise"
+   ],
+   "t": "mobile",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3
+   ],
+   "lv": [
+    4
+   ],
+   "tel": "04 91 90 06 04",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "EMSI Les Vallons",
+   "p": "CH Édouard Toulouse",
+   "c": "sanitaire",
+   "dm": [
+    "crise"
+   ],
+   "t": "mobile",
+   "a": null,
+   "cov": [
+    13,
+    14
+   ],
+   "lv": [
+    4
+   ],
+   "tel": "04 91 90 06 05",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "EMSI Littoral Nord",
+   "p": "CH Édouard Toulouse",
+   "c": "sanitaire",
+   "dm": [
+    "crise"
+   ],
+   "t": "mobile",
+   "a": null,
+   "cov": [
+    15,
+    16
+   ],
+   "lv": [
+    4
+   ],
+   "tel": "04 91 96 97 13",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "Lieu de Répit",
+   "p": "Association JUST",
+   "c": "social",
+   "dm": [
+    "crise",
+    "retablissement"
+   ],
+   "t": "lieu",
+   "a": 1,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    4
+   ],
+   "ad": "85 rue Jean de Bernardy, 13001",
+   "note": "Alternative non médicalisée à l'hospitalisation. Séjours d'un mois renouvelables deux fois, trois mois maximum. Projet expérimental.",
+   "src": "Kit DAC 13 Sud, 07/05/2026",
+   "specif": true
+  },
+  {
+   "n": "MARSS — équipe mobile psychiatrie précarité",
+   "p": "AP-HM",
+   "c": "medicosocial",
+   "dm": [
+    "crise",
+    "lien",
+    "addictions"
+   ],
+   "t": "mobile",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    3
+   ],
+   "tel": "06 16 19 33 42",
+   "note": "Adultes sans abri avec troubles psychiatriques sévères, très éloignés des soins.",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "EMPP",
+   "p": "CH Édouard Toulouse",
+   "c": "medicosocial",
+   "dm": [
+    "lien",
+    "clinique"
+   ],
+   "t": "mobile",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    2
+   ],
+   "tel": "04 91 96 96 53",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "EMPP",
+   "p": "CH Valvert",
+   "c": "medicosocial",
+   "dm": [
+    "lien",
+    "clinique"
+   ],
+   "t": "mobile",
+   "a": null,
+   "cov": [
+    11,
+    12
+   ],
+   "lv": [
+    2
+   ],
+   "tel": "04 91 35 66 38",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "EDI — équipe Diogène et incurie",
+   "p": "CMSMH",
+   "c": "medicosocial",
+   "dm": [
+    "logement",
+    "retablissement"
+   ],
+   "t": "mobile",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    3
+   ],
+   "tel": "07 64 43 44 37",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "ESAMH — équipe santé mentale et habitat",
+   "p": "CMSMH",
+   "c": "medicosocial",
+   "dm": [
+    "logement",
+    "insertion"
+   ],
+   "t": "mobile",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    3
+   ],
+   "src": "SIIS Cartographie de l'offre, 11/05/2026"
+  },
+  {
+   "n": "LEAF — désinstitutionnalisation par les loisirs",
+   "p": "AP-HM Sainte-Marguerite",
+   "c": "social",
+   "dm": [
+    "insertion",
+    "lien"
+   ],
+   "t": "lieu",
+   "a": 9,
+   "cov": [
+    8,
+    9,
+    10
+   ],
+   "lv": [
+    1
+   ],
+   "ad": "bâtiment Solaris, 270 boulevard Sainte-Marguerite, 13009",
+   "tel": "04 91 74 67 01",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "CLIP — centre local d'intervention précoce",
+   "p": "AP-HM",
+   "c": "sanitaire",
+   "dm": [
+    "clinique",
+    "retablissement"
+   ],
+   "t": "lieu",
+   "a": 6,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    2
+   ],
+   "ad": "9 rue Lafon, 13006",
+   "tel": "04 91 43 59 09",
+   "note": "16 à 30 ans, après un épisode psychotique.",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "Réhab Marseille",
+   "p": "AP-HM",
+   "c": "sanitaire",
+   "dm": [
+    "retablissement",
+    "clinique"
+   ],
+   "t": "lieu",
+   "a": 8,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    2
+   ],
+   "ad": "44-52 boulevard Michelet, 13008",
+   "tel": "04 91 22 04 00",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "URCE",
+   "p": "CH Édouard Toulouse",
+   "c": "sanitaire",
+   "dm": [
+    "retablissement",
+    "insertion"
+   ],
+   "t": "lieu",
+   "a": 15,
+   "cov": [
+    1,
+    2,
+    3,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    2
+   ],
+   "ad": "118 chemin de Mimet, 13015",
+   "tel": "04 91 96 98 06",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "Réhab'",
+   "p": "CH Valvert",
+   "c": "sanitaire",
+   "dm": [
+    "retablissement"
+   ],
+   "t": "lieu",
+   "a": 11,
+   "cov": [
+    11,
+    12
+   ],
+   "lv": [
+    2
+   ],
+   "ad": "78 boulevard des Libérateurs, 13011",
+   "tel": "04 91 87 68 21",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "Clinique Mon Repos",
+   "p": "emeis",
+   "c": "sanitaire",
+   "dm": [
+    "clinique",
+    "crise"
+   ],
+   "t": "lieu",
+   "a": 8,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    4
+   ],
+   "ad": "67 boulevard Léau, 13008",
+   "tel": "04 91 22 90 03",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "Clinique L'Émeraude",
+   "p": "emeis",
+   "c": "sanitaire",
+   "dm": [
+    "clinique",
+    "crise"
+   ],
+   "t": "lieu",
+   "a": 9,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    4
+   ],
+   "ad": "34 traverse de la Seigneurie, 13009",
+   "tel": "04 91 40 92 17",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "Clinique Les 4 Saisons",
+   "p": "Ramsay Santé",
+   "c": "sanitaire",
+   "dm": [
+    "clinique",
+    "crise"
+   ],
+   "t": "lieu",
+   "a": 11,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    4
+   ],
+   "ad": "165 route des Camoins, 13011",
+   "tel": "04 91 43 00 94",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "Clinique Saint-Roch Montfleury",
+   "p": "Privé",
+   "c": "sanitaire",
+   "dm": [
+    "clinique",
+    "crise"
+   ],
+   "t": "lieu",
+   "a": 11,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    4
+   ],
+   "ad": "160 route des Camoins, 13011",
+   "tel": "04 91 43 01 20",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "Clinique des Trois Lucs",
+   "p": "emeis",
+   "c": "sanitaire",
+   "dm": [
+    "clinique",
+    "crise"
+   ],
+   "t": "lieu",
+   "a": 12,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    4
+   ],
+   "ad": "28 traverse de la Salette, 13012",
+   "tel": "04 91 93 01 20",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "Clinique Saint-Barnabé",
+   "p": "Ramsay Santé",
+   "c": "sanitaire",
+   "dm": [
+    "clinique",
+    "addictions"
+   ],
+   "t": "lieu",
+   "a": 14,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    4
+   ],
+   "ad": "72 cours de Fontainieu, 13014",
+   "tel": "04 96 15 87 29",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "Clinique Sainte-Marthe Saint-Joseph",
+   "p": "Privé",
+   "c": "sanitaire",
+   "dm": [
+    "clinique"
+   ],
+   "t": "lieu",
+   "a": 14,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    4
+   ],
+   "ad": "9 traverse du Canet, 13014",
+   "tel": "04 91 98 10 27",
+   "note": "Femmes uniquement.",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "Nova Mentis",
+   "p": "Privé",
+   "c": "sanitaire",
+   "dm": [
+    "clinique"
+   ],
+   "t": "lieu",
+   "a": 9,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    1,
+    2
+   ],
+   "ad": "14 boulevard Gustave Ganay, 13009",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "Centre Medipsy",
+   "p": "Ramsay Santé",
+   "c": "sanitaire",
+   "dm": [
+    "clinique"
+   ],
+   "t": "lieu",
+   "a": 10,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    1,
+    2
+   ],
+   "ad": "41 avenue Comtesse Lily Pastré, 13010",
+   "tel": "04 13 59 52 64",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "GEM LEO — Lieu d'Échange et d'Ouverture",
+   "p": "Association SARA",
+   "c": "entraide",
+   "dm": [
+    "lien",
+    "insertion"
+   ],
+   "t": "lieu",
+   "a": 3,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    1
+   ],
+   "ad": "20 rue Despieds, 13003",
+   "tel": "04 91 64 16 03",
+   "src": "Kit DAC 13 Sud, 07/05/2026",
+   "specif": true
+  },
+  {
+   "n": "GEM Les Sentinelles Égalité",
+   "p": "Sentinelles Égalité",
+   "c": "entraide",
+   "dm": [
+    "lien",
+    "insertion"
+   ],
+   "t": "lieu",
+   "a": 6,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    1
+   ],
+   "ad": "2 rue Friedland, 13006",
+   "tel": "04 86 12 68 87",
+   "src": "Kit DAC 13 Sud, 07/05/2026",
+   "specif": true
+  },
+  {
+   "n": "GEM Club Parenthèse",
+   "p": "Espoir Provence",
+   "c": "entraide",
+   "dm": [
+    "lien",
+    "insertion"
+   ],
+   "t": "lieu",
+   "a": 5,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    1
+   ],
+   "ad": "28 rue Bérard, 13005",
+   "tel": "06 79 96 34 24",
+   "src": "Kit DAC 13 Sud, 07/05/2026",
+   "specif": true
+  },
+  {
+   "n": "GEMarseille",
+   "p": "GEMarseille",
+   "c": "entraide",
+   "dm": [
+    "lien",
+    "insertion"
+   ],
+   "t": "lieu",
+   "a": 12,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    1
+   ],
+   "ad": "10 square Paul Arène, 13012",
+   "tel": "06 26 49 93 12",
+   "src": "Kit DAC 13 Sud, 07/05/2026",
+   "specif": true
+  },
+  {
+   "n": "ClubHouse Marseille",
+   "p": "ClubHouse France",
+   "c": "entraide",
+   "dm": [
+    "insertion",
+    "retablissement",
+    "lien"
+   ],
+   "t": "lieu",
+   "a": 4,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    1
+   ],
+   "ad": "12 rue de Provence, 13004",
+   "tel": "04 91 85 84 26",
+   "src": "Kit DAC 13 Sud, 07/05/2026",
+   "specif": true
+  },
+  {
+   "n": "ESPER Pro — pair-aidance",
+   "p": "ESPER Pro",
+   "c": "entraide",
+   "dm": [
+    "retablissement",
+    "lien"
+   ],
+   "t": "lieu",
+   "a": 4,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    1
+   ],
+   "note": "Permanence au ClubHouse Marseille.",
+   "src": "Kit DAC 13 Sud, 07/05/2026",
+   "specif": true
+  },
+  {
+   "n": "CoFoR — centre de formation au rétablissement",
+   "p": "CoFoR",
+   "c": "entraide",
+   "dm": [
+    "retablissement"
+   ],
+   "t": "lieu",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    1,
+    2
+   ],
+   "tel": "06 41 85 33 18",
+   "note": "Implantation à préciser.",
+   "src": "Kit DAC 13 Sud, 07/05/2026",
+   "lacune": true,
+   "specif": true
+  },
+  {
+   "n": "UNAFAM 13",
+   "p": "UNAFAM",
+   "c": "entraide",
+   "dm": [
+    "lien"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    1
+   ],
+   "tel": "06 43 84 67 22",
+   "note": "Accueil, formations, groupes de parole pour les proches aidants.",
+   "src": "Kit DAC 13 Sud, 07/05/2026",
+   "lacune": true
+  },
+  {
+   "n": "Association Astrée",
+   "p": "Astrée",
+   "c": "entraide",
+   "dm": [
+    "lien"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    1
+   ],
+   "note": "Accompagnement de personnes isolées par des bénévoles.",
+   "src": "Kit DAC 13 Sud, 07/05/2026",
+   "lacune": true
+  },
+  {
+   "n": "PROFAMILLE",
+   "p": "Solidarité Réhabilitation",
+   "c": "entraide",
+   "dm": [
+    "lien"
+   ],
+   "t": "lieu",
+   "a": 10,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    1
+   ],
+   "ad": "7 rue Esquiros, 13010",
+   "tel": "04 91 22 83 53",
+   "note": "Programme psychoéducatif pour les proches.",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "A3 — Aide aux aidants",
+   "p": "Association A3",
+   "c": "entraide",
+   "dm": [
+    "lien"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    1
+   ],
+   "tel": "04 91 70 76 53",
+   "src": "Kit DAC 13 Sud, 07/05/2026",
+   "lacune": true
+  },
+  {
+   "n": "DEP'AGIR",
+   "p": "DEP'AGIR",
+   "c": "entraide",
+   "dm": [
+    "lien"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    1
+   ],
+   "tel": "06 81 60 60 13",
+   "src": "Kit DAC 13 Sud, 07/05/2026",
+   "lacune": true
+  },
+  {
+   "n": "Réseau Santé Mentale et Habitat",
+   "p": "GCSMS CMSMH",
+   "c": "coordination",
+   "dm": [
+    "logement",
+    "lien"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    2,
+    3
+   ],
+   "note": "Réunions plénières.",
+   "src": "Atelier de cartographie SIIS, 4 parcours",
+   "specif": true
+  },
+  {
+   "n": "DAC 13 Sud",
+   "p": "DAC 13 Sud",
+   "c": "coordination",
+   "dm": [
+    "lien",
+    "clinique"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    2
+   ],
+   "tel": "04 65 40 50 00",
+   "note": "Accompagnement à domicile et à distance des situations complexes.",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "ARCA Sud",
+   "p": "ARCA Sud",
+   "c": "coordination",
+   "dm": [
+    "addictions"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    2
+   ],
+   "tel": "04 88 92 68 88",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "ASMA",
+   "p": "ASMA",
+   "c": "coordination",
+   "dm": [
+    "crise"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    2
+   ],
+   "tel": "04 91 76 70 40",
+   "note": "Prévention du risque suicidaire chez les adolescents.",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "Communauté 360",
+   "p": "Unapei Alpes Provence",
+   "c": "coordination",
+   "dm": [
+    "budget",
+    "insertion"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    1,
+    2
+   ],
+   "tel": "0800 360 360",
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "CPTS 2/3 Marseille",
+   "p": "CPTS",
+   "c": "coordination",
+   "dm": [
+    "clinique"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    2,
+    3
+   ],
+   "lv": [
+    1,
+    2
+   ],
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "CPTS Activ Santé",
+   "p": "CPTS",
+   "c": "coordination",
+   "dm": [
+    "clinique"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    4,
+    5
+   ],
+   "lv": [
+    1,
+    2
+   ],
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "CPTS du Plateau",
+   "p": "CPTS",
+   "c": "coordination",
+   "dm": [
+    "clinique"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    6
+   ],
+   "lv": [
+    1,
+    2
+   ],
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "CPTS Marseille 7e",
+   "p": "CPTS",
+   "c": "coordination",
+   "dm": [
+    "clinique"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    7
+   ],
+   "lv": [
+    1,
+    2
+   ],
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "CPTS Littoral Sud",
+   "p": "CPTS",
+   "c": "coordination",
+   "dm": [
+    "clinique"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    8,
+    9
+   ],
+   "lv": [
+    1,
+    2
+   ],
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "CPTS Vitale Santé",
+   "p": "CPTS",
+   "c": "coordination",
+   "dm": [
+    "clinique"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    10
+   ],
+   "lv": [
+    1,
+    2
+   ],
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "CPTS Itinéraire Santé",
+   "p": "CPTS",
+   "c": "coordination",
+   "dm": [
+    "clinique"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    11,
+    12,
+    13
+   ],
+   "lv": [
+    1,
+    2
+   ],
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "CPTS Actes Santé",
+   "p": "CPTS",
+   "c": "coordination",
+   "dm": [
+    "clinique"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    1,
+    2
+   ],
+   "src": "Kit DAC 13 Sud, 07/05/2026"
+  },
+  {
+   "n": "Working First 13",
+   "p": "Working First",
+   "c": "social",
+   "dm": [
+    "insertion"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    1
+   ],
+   "note": "Inclusion professionnelle des personnes vivant avec des troubles psychiques.",
+   "src": "Kit DAC 13 Sud, 07/05/2026",
+   "lacune": true,
+   "specif": true
+  },
+  {
+   "n": "Plateforme Emploi Accompagné 13",
+   "p": "Unapei",
+   "c": "social",
+   "dm": [
+    "insertion"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    1,
+    2
+   ],
+   "src": "Kit DAC 13 Sud, 07/05/2026",
+   "lacune": true
+  },
+  {
+   "n": "ESAT Phocéen",
+   "p": "ESAT",
+   "c": "social",
+   "dm": [
+    "insertion"
+   ],
+   "t": "lieu",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    1
+   ],
+   "note": "Spécifique handicap psychique. Implantation à préciser.",
+   "src": "Kit DAC 13 Sud, 07/05/2026",
+   "lacune": true
+  },
+  {
+   "n": "ESAT La Manade",
+   "p": "ESAT",
+   "c": "social",
+   "dm": [
+    "insertion"
+   ],
+   "t": "lieu",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    1
+   ],
+   "note": "Spécifique handicap psychique. Implantation à préciser.",
+   "src": "Kit DAC 13 Sud, 07/05/2026",
+   "lacune": true
+  },
+  {
+   "n": "Maison Sport Santé Marseille en Forme",
+   "p": "Ville de Marseille",
+   "c": "social",
+   "dm": [
+    "insertion"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    1
+   ],
+   "src": "Atelier de cartographie SIIS, 4 parcours",
+   "lacune": true,
+   "specif": true
+  },
+  {
+   "n": "Handidents",
+   "p": "Handidents",
+   "c": "sanitaire",
+   "dm": [
+    "clinique"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    1,
+    2
+   ],
+   "note": "Centre dentaire adapté, interventions en intra.",
+   "src": "Atelier de cartographie SIIS, 4 parcours",
+   "lacune": true,
+   "specif": true
+  },
+  {
+   "n": "IML Santé Mentale Coc'Home",
+   "p": "Groupe SOS",
+   "c": "logement",
+   "dm": [
+    "logement"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    2,
+    3
+   ],
+   "note": "Intermédiation locative spécialisée troubles psychiques. Adresse non documentée dans les sources disponibles.",
+   "src": "Atelier de cartographie SIIS, 4 parcours",
+   "lacune": true
+  },
+  {
+   "n": "Habitat Alternatif Social (HAS)",
+   "p": "HAS",
+   "c": "logement",
+   "dm": [
+    "logement"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    2
+   ],
+   "note": "Logement accompagné, médiation locative, habitat inclusif. Sites non documentés.",
+   "src": "SIIS Cartographie de l'offre, 11/05/2026",
+   "lacune": true
+  },
+  {
+   "n": "Familles Gouvernantes UDAF",
+   "p": "UDAF 13",
+   "c": "logement",
+   "dm": [
+    "logement"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    2
+   ],
+   "note": "16 habitats inclusifs. Adresses non documentées.",
+   "src": "Kit DAC 13 Sud, 07/05/2026",
+   "lacune": true
+  },
+  {
+   "n": "Habitats inclusifs SAJ",
+   "p": "Association SAJ",
+   "c": "logement",
+   "dm": [
+    "logement"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    2
+   ],
+   "note": "10 maisons partagées. Adresses non documentées.",
+   "src": "Kit DAC 13 Sud, 07/05/2026",
+   "lacune": true
+  },
+  {
+   "n": "ACT 13 — appartements de coordination thérapeutique",
+   "p": "ACT 13",
+   "c": "logement",
+   "dm": [
+    "logement",
+    "clinique"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    2
+   ],
+   "note": "Adresses non documentées.",
+   "src": "Kit DAC 13 Sud, 07/05/2026",
+   "lacune": true
+  },
+  {
+   "n": "Un Chez-Soi d'Abord",
+   "p": "GCSMS CMSMH",
+   "c": "logement",
+   "dm": [
+    "logement",
+    "retablissement"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    3
+   ],
+   "note": "Adresses non documentées.",
+   "src": "SIIS Cartographie de l'offre, 11/05/2026",
+   "lacune": true
+  },
+  {
+   "n": "Appartements thérapeutiques et AFT",
+   "p": "CH Valvert / CH Édouard Toulouse",
+   "c": "logement",
+   "dm": [
+    "logement",
+    "clinique"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    3
+   ],
+   "note": "Orientation par les équipes de secteur. Adresses non documentées.",
+   "src": "SIIS Cartographie de l'offre, 11/05/2026",
+   "lacune": true
+  },
+  {
+   "n": "Pensions de famille et résidences accueil",
+   "p": "Opérateurs multiples",
+   "c": "logement",
+   "dm": [
+    "logement",
+    "lien"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    2
+   ],
+   "note": "Orientation SIAO. Recensement à produire.",
+   "src": "SIIS Cartographie de l'offre, 11/05/2026",
+   "lacune": true
+  },
+  {
+   "n": "SAMSAH",
+   "p": "Opérateurs multiples",
+   "c": "medicosocial",
+   "dm": [
+    "logement",
+    "budget",
+    "clinique"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    2
+   ],
+   "note": "Sur notification MDPH. Le kit DAC renvoie vers un annuaire externe, aucune liste territoriale disponible.",
+   "src": "Kit DAC 13 Sud, 07/05/2026",
+   "lacune": true
+  },
+  {
+   "n": "SAVS spécialisés handicap psychique",
+   "p": "Espoir Provence et autres",
+   "c": "medicosocial",
+   "dm": [
+    "logement",
+    "budget",
+    "lien"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    2
+   ],
+   "note": "Sur notification MDPH. Recensement à produire.",
+   "src": "SIIS Cartographie de l'offre, 11/05/2026",
+   "lacune": true
+  },
+  {
+   "n": "CHRS et hébergement de transition",
+   "p": "Opérateurs multiples",
+   "c": "logement",
+   "dm": [
+    "logement"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    2,
+    3
+   ],
+   "note": "CocoVelten, Résidence Marabou, Chez Simone cités dans les parcours. Recensement à produire.",
+   "src": "Atelier de cartographie SIIS, 4 parcours",
+   "lacune": true
+  },
+  {
+   "n": "AVDL Santé Mentale",
+   "p": "Opérateurs multiples",
+   "c": "logement",
+   "dm": [
+    "logement"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    2
+   ],
+   "note": "Accompagnement vers et dans le logement. Recensement à produire.",
+   "src": "Atelier de cartographie SIIS, 4 parcours",
+   "lacune": true
+  },
+  {
+   "n": "CSAPA",
+   "p": "Opérateurs multiples",
+   "c": "medicosocial",
+   "dm": [
+    "addictions"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    1,
+    2
+   ],
+   "note": "Recensement à produire.",
+   "src": "SIIS Cartographie de l'offre, 11/05/2026",
+   "lacune": true
+  },
+  {
+   "n": "CAARUD",
+   "p": "Opérateurs multiples",
+   "c": "medicosocial",
+   "dm": [
+    "addictions"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    2
+   ],
+   "note": "Réduction des risques. Recensement à produire.",
+   "src": "SIIS Cartographie de l'offre, 11/05/2026",
+   "lacune": true
+  },
+  {
+   "n": "Nouvelle Aube",
+   "p": "Association Nouvelle Aube",
+   "c": "medicosocial",
+   "dm": [
+    "addictions",
+    "crise"
+   ],
+   "t": "mobile",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    3
+   ],
+   "note": "Aller-vers, maraudes.",
+   "src": "Atelier de cartographie SIIS, 4 parcours",
+   "lacune": true
+  },
+  {
+   "n": "ASUD — bus itinérant",
+   "p": "ASUD",
+   "c": "medicosocial",
+   "dm": [
+    "addictions"
+   ],
+   "t": "mobile",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    2,
+    3
+   ],
+   "src": "Atelier de cartographie SIIS, 4 parcours",
+   "lacune": true
+  },
+  {
+   "n": "MDPH 13",
+   "p": "Département 13",
+   "c": "social",
+   "dm": [
+    "budget"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    1,
+    2
+   ],
+   "src": "SIIS Cartographie de l'offre, 11/05/2026",
+   "lacune": true
+  },
+  {
+   "n": "CCAS et centres sociaux de quartier",
+   "p": "Ville de Marseille",
+   "c": "social",
+   "dm": [
+    "budget",
+    "lien"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    1
+   ],
+   "note": "Soutien à la gestion budgétaire. Implantations à recenser.",
+   "src": "Atelier de cartographie SIIS, 4 parcours",
+   "lacune": true
+  },
+  {
+   "n": "Mesures de protection — tutelle, curatelle, MASP",
+   "p": "Opérateurs multiples",
+   "c": "social",
+   "dm": [
+    "budget"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    2,
+    3
+   ],
+   "note": "Irritant signalé : manque de tuteurs et curateurs de qualité et accessibles.",
+   "src": "Atelier de cartographie SIIS, 4 parcours",
+   "lacune": true
+  },
+  {
+   "n": "SIAO / 115",
+   "p": "SIAO 13",
+   "c": "logement",
+   "dm": [
+    "logement"
+   ],
+   "t": "reseau",
+   "a": null,
+   "cov": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "lv": [
+    2,
+    3,
+    4
+   ],
+   "note": "Irritant signalé : pas de priorisation ni de fléchage pour les publics précarité et psychiatrie.",
+   "src": "Atelier de cartographie SIIS, 4 parcours"
+  }
+ ]
+}

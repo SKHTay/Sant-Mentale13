@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cartographie de l'écosystème santé mentale — Marseille | SIIS Santé mentale</title>
+<meta name="description" content="Cartographie interactive des dispositifs de santé mentale à Marseille : niveaux de besoin, domaines d'accompagnement, périmètres d'intervention, parcours patients et zones de tension. Expérimentation SIIS Santé mentale, Article 51.">
+<meta name="author" content="CIUS — Centre d'Innovation et d'Usages en Santé">
+<link rel="icon" href="logo-cius-mark.png">
+<link rel="stylesheet" href="leaflet.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="loader">Chargement des données</div>
+
+<header><div class="wrap hdr">
+  <img src="logo-cius.png" alt="CIUS — Centre d'Innovation et d'Usages en Santé">
+  <div class="brandtxt">SIIS Santé mentale<br>Article 51 · Marseille</div>
+  <nav id="nav"></nav>
+</div></header>
+
+<!-- ============ SYNTHÈSE ============ -->
+<section class="view on" id="v-synthese">
+  <div class="hero"><div class="wrap">
+    <p class="eyebrow">Restitution de l'atelier de cartographie du territoire</p>
+    <h1>Cartographie de l'écosystème<br>en santé mentale à Marseille</h1>
+    <p class="lead" style="margin-top:18px">Une lecture partagée de l'offre marseillaise mobilisable dans le parcours des personnes vivant avec des troubles psychiques invalidants, construite avec les acteurs du territoire autour de quatre parcours patients.</p>
+    <div class="chips" style="margin-top:22px">
+      <span class="chip violet">Marseille intra-muros</span>
+      <span class="chip cyan">Expérimentation Article 51</span>
+      <span class="chip">Équipes EMI et SIDIIS</span>
+      <span class="chip warn">Version de travail, recensement non exhaustif</span>
+    </div>
+  </div></div>
+
+  <div class="wrap">
+    <div class="grid g4" style="margin-bottom:36px">
+      <div class="stat"><div class="v">4</div><div class="k">parcours patients travaillés en atelier</div></div>
+      <div class="stat"><div class="v">40</div><div class="k">participants réunis sur une journée</div></div>
+      <div class="stat"><div class="v" id="s-disp">—</div><div class="k">dispositifs recensés dans le socle</div></div>
+      <div class="stat"><div class="v">38</div><div class="k">irritants classés en 7 familles</div></div>
+    </div>
+
+    <div class="grid g2">
+      <div>
+        <h2>Ce que montre la cartographie</h2>
+        <p style="margin-top:14px">Marseille dispose d'une offre riche et diversifiée en santé mentale, portée par de nombreux acteurs sanitaires, sociaux et médico-sociaux. L'expérimentation SIIS constitue une occasion de prendre du recul sur cet écosystème et de comprendre comment ses composantes s'articulent autour des parcours.</p>
+        <p>Le suivi intensif n'est efficient que s'il s'intègre dans un continuum de services. Ce qui fait l'efficacité du modèle ACT et SIM, ce n'est pas seulement l'intensité de l'accompagnement, mais sa capacité à s'articuler avec l'ensemble de l'offre du territoire.</p>
+        <p class="q">Dans les quatre parcours, la valeur ajoutée du suivi intensif tient à sa capacité à s'articuler avec le reste du continuum. C'est cette mise en réseau, plus que le seul niveau d'intensité, qui sécurise les parcours.</p>
+      </div>
+      <div>
+        <div class="card soft">
+          <p class="eyebrow">Gradation de l'offre par niveau de besoin</p>
+          <p class="small" style="margin-bottom:16px">La grille reprend le modèle québécois de suivi intensif en équipe et de soutien d'intensité variable, adapté par les équipes SIIS au cadre français.</p>
+          <div id="niv-cards"></div>
+        </div>
+      </div>
+    </div>
+
+    <h2 style="margin-top:52px">Quatre objectifs</h2>
+    <div class="grid g4" style="margin-top:18px">
+      <div class="card"><h4>Visualiser</h4><p class="small">Donner à voir la diversité et la gradation de l'offre, du soutien ponctuel à l'accompagnement intensif et à la crise.</p></div>
+      <div class="card"><h4>Comprendre</h4><p class="small">Identifier qui intervient, à quel moment et en articulation avec qui, ainsi que les complémentarités entre dispositifs.</p></div>
+      <div class="card"><h4>Sécuriser</h4><p class="small">Repérer les relais et passerelles permettant d'assurer la continuité des parcours et d'accompagner les variations d'intensité.</p></div>
+      <div class="card"><h4>Éclairer</h4><p class="small">Faire émerger les points d'appui, les besoins moins couverts et les enjeux de coordination pour la généralisation du modèle.</p></div>
+    </div>
+
+    <h2 style="margin-top:52px">Spécificités marseillaises</h2>
+    <p class="small" style="max-width:720px;margin-top:10px">Certains dispositifs cités dans les parcours sont des expérimentations ou des ressources associatives propres au territoire. D'autres relèvent du droit commun, disponible partout en France. Distinguer les deux permet d'anticiper ce qui serait à reconstruire ailleurs.</p>
+    <div id="specif" class="chips" style="margin-top:16px"></div>
+  </div>
+</section>
+
+<!-- ============ CARTOGRAPHIE ============ -->
+<section class="view" id="v-carto">
+  <div class="wrap">
+    <p class="eyebrow">Vue 1</p>
+    <h2>Cartographie des dispositifs</h2>
+    <p class="lead" style="margin:12px 0 26px">Filtrez par niveau de besoin, domaine d'accompagnement et type d'acteur. Cliquez un arrondissement pour voir ce qui y est implanté, ce qui y intervient depuis ailleurs, et ce qui ne le couvre pas.</p>
+
+    <div class="layout">
+      <aside class="rail">
+        <div class="fgrp"><p class="flab">Niveau de besoin</p><div id="f-niv"></div></div>
+        <div class="fgrp"><p class="flab">Domaine d'accompagnement</p><div id="f-dom"></div></div>
+        <div class="fgrp"><p class="flab">Catégorie d'acteur</p><div id="f-cat"></div></div>
+        <div class="fgrp"><p class="flab">Périmètre d'action</p><div id="f-typ"></div></div>
+        <div class="fgrp"><p class="flab">Fond de carte</p><div id="f-base"></div></div>
+        <div class="fgrp"><span class="pill reset" id="f-reset">Réinitialiser les filtres</span></div>
+      </aside>
+      <div>
+        <div id="mapwarn"></div>
+        <div class="toolbar">
+          <div class="modes" id="modes"></div>
+          <div id="cover-badge"></div>
+        </div>
+        <div id="pane-map"><div id="map"></div><div id="hoverbar"></div><p class="mapnote">Aplats par arrondissement, proportionnels au nombre de dispositifs ancrés sur le territoire, implantation sur place ou rattachement sectoriel. Les ressources à l'échelle de la ville sont listées à part.</p></div>
+        <div id="pane-carto" style="display:none"><div class="carto" id="cartogram"></div></div>
+        <div id="pane-list" style="display:none"><div class="tblwrap"><table><thead><tr><th>Dispositif</th><th>Catégorie</th><th>Niveaux</th><th>Implantation</th><th>Couverture</th></tr></thead><tbody id="tbody"></tbody></table></div></div>
+        <div class="legend" id="map-legend"></div>
+        <div id="panel-arr"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COUVERTURE ============ -->
+<section class="view" id="v-couv">
+  <div class="wrap">
+    <p class="eyebrow">Vue 2</p>
+    <h2>Couverture par domaine et par niveau</h2>
+    <p class="lead" style="margin:12px 0 22px">Huit domaines de besoin croisés avec quatre niveaux d'intensité. Trente-deux cases par territoire, et ce sont les cases vides qui constituent le résultat.</p>
+    <div class="modes" id="couv-arr" style="margin-bottom:20px"></div>
+    <div class="card"><div class="mx" id="matrix"></div>
+      <div class="legend">
+        <span><i class="sw" style="background:#FFECEC"></i>aucun dispositif ancré ici</span>
+        <span><i class="sw hatch"></i>dispositif connu mais non localisé</span>
+        <span><i class="sw" style="background:#E0F2F9"></i>1 à 2 dispositifs</span>
+        <span><i class="sw" style="background:#DFF3E8"></i>3 et plus</span>
+      </div>
+    </div>
+    <div class="card soft" style="margin-top:22px">
+      <h4>Comment lire cette grille</h4>
+      <p class="small">Une case rouge signale qu'aucun dispositif n'est ancré sur ce territoire, ni implanté sur place ni rattaché au secteur. Une case hachurée signale un dispositif connu mais dont l'implantation n'est pas documentée, principalement sur le bloc logement et hébergement. La distinction est essentielle : la première décrit le territoire, la seconde décrit l'état du recensement.</p>
+      <p class="small">Sur les arrondissements hors périmètre SIIS, la colonne « besoin intensif » se vide presque entièrement. C'est la traduction visuelle du septième irritant sur l'inégalité de répartition territoriale.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PARCOURS ============ -->
+<section class="view" id="v-parc">
+  <div class="wrap">
+    <p class="eyebrow">Vue 3</p>
+    <h2>Les quatre parcours patients</h2>
+    <p class="lead" style="margin:12px 0 22px">Quatre parcours fictifs inspirés du réel, construits à partir d'entretiens préparatoires puis travaillés en atelier pour situer les dispositifs à chaque étape et faire apparaître les ruptures.</p>
+    <div class="tabs" id="parc-tabs"></div>
+    <div id="parc-body"></div>
+  </div>
+</section>
+
+<!-- ============ IRRITANTS ============ -->
+<section class="view" id="v-irr">
+  <div class="wrap">
+    <p class="eyebrow">Vue 4</p>
+    <h2>Zones de tension et pistes de solution</h2>
+    <p class="lead" style="margin:12px 0 26px">Trente-huit occurrences relevées dans les quatre parcours, classées en sept familles d'irritants, avec les bonnes pratiques déjà en place sur le territoire.</p>
+    <div id="irr-list"></div>
+    <h3 style="margin-top:48px">Complémentarités relevées</h3>
+    <div class="grid g2" style="margin-top:16px" id="compl"></div>
+    <div class="card soft" style="margin-top:24px">
+      <h4>Un seul doublon avéré sur quatre parcours</h4>
+      <p class="small">L'atelier a identifié un doublon certain, entre Coc'Home et le SIIS sur le volet logement, et un doublon potentiel entre CMP et SIIS chez Sylvie. Aucun des trente-huit irritants ne porte sur de la redondance. Lecture proposée : l'écosystème marseillais est lacunaire plutôt que redondant.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MÉTHODE ============ -->
+<section class="view" id="v-meth">
+  <div class="wrap">
+    <p class="eyebrow">Vue 5</p>
+    <h2>Méthode, sources et limites</h2>
+    <p class="lead" style="margin:12px 0 26px">Ce support est un outil de lecture de l'offre et de préparation de la concertation. Ce qu'il peut affirmer et ce qu'il ne peut pas encore affirmer.</p>
+
+    <div class="grid g4" style="margin-bottom:34px">
+      <div class="stat"><div class="v" id="m-total">—</div><div class="k">dispositifs dans le socle</div></div>
+      <div class="stat"><div class="v" id="m-loc">—</div><div class="k">avec implantation documentée</div></div>
+      <div class="stat"><div class="v" id="m-adr">—</div><div class="k">avec adresse complète</div></div>
+      <div class="stat"><div class="v" id="m-lac">—</div><div class="k">connus mais non localisés</div></div>
+    </div>
+
+    <div class="grid g2">
+      <div class="card">
+        <h4>Les quatre étapes de la mission</h4>
+        <ol class="small">
+          <li>Analyse documentaire et entretiens préparatoires, croisant les documents de restitution terrain SIIS et les références québécoises sur le suivi intensif.</li>
+          <li>Atelier de cartographie, 40 participants, 4 parcours travaillés, positionnement des dispositifs et relevé des irritants.</li>
+          <li>Analyse et consolidation, validation des 4 parcours avec les référents, construction du schéma par niveau de besoin.</li>
+          <li>Croisement de données et mise en forme interactive.</li>
+        </ol>
+      </div>
+      <div class="card">
+        <h4>Sources mobilisées</h4>
+        <ul class="small">
+          <li>Kit Ressources, écosystème de la santé mentale du territoire Marseille, Aubagne, La Ciotat, DAC 13 Sud, mise à jour du 7 mai 2026.</li>
+          <li>Cartographie de l'offre sur le territoire de Marseille, SIIS Santé mentale, 11 mai 2026.</li>
+          <li>Atelier de cartographie SIIS, quatre parcours patients consolidés.</li>
+          <li>Grille d'évaluation des besoins en soutien, adaptée de la grille de Denver par le CNESM puis par les équipes SIIS.</li>
+          <li>Contours des arrondissements : fichier <code>arrondissements-marseille.geojson</code> réutilisé du projet Carto Santé PACA.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 style="margin-top:44px">Six limites à porter devant l'ARS</h3>
+    <div class="grid g2" style="margin-top:16px">
+      <div class="card"><h4>Périmètre</h4><p class="small">Le SIIS couvre cinq secteurs de psychiatrie, soit les 8e, 9e, 10e pour SIDIIS et les 11e, 12e pour EMI, plus Allauch, Plan-de-Cuques et La Penne-sur-Huveaune. Le kit DAC couvre Marseille, Aubagne et La Ciotat. Ce support est restreint à Marseille intra-muros.</p></div>
+      <div class="card"><h4>Le bloc logement n'est pas recensé</h4><p class="small">SAMSAH, SAVS, ACT, pensions de famille, CHRS, IML : les catégories qui concentrent huit des trente-huit irritants sont celles pour lesquelles aucune liste territoriale n'existe dans les sources disponibles. La carte est vide là où la tension est maximale.</p></div>
+      <div class="card"><h4>Le classement par niveau reste à valider</h4><p class="small">L'attribution d'un niveau de besoin et d'un domaine à chaque structure est un travail éditorial construit à partir de la grille SIIS. Il doit être validé par l'ARS et les équipes avant toute diffusion externe.</p></div>
+      <div class="card"><h4>Pas de données populationnelles</h4><p class="small">Aucune file active par secteur ni donnée de population n'est disponible. La grille québécoise fournit la clé de calcul, 2 000 personnes avec troubles sévères pour 100 000 habitants dont 3,5 à 5 % relevant du suivi intensif. Il manque la population par arrondissement pour produire un besoin théorique.</p></div>
+      <div class="card"><h4>Accès au suivi intensif des personnes sans domicile</h4><p class="small">Le rattachement se fait par date de naissance. Les fenêtres documentées couvrent 131 jours sur 365, soit 36 % de l'année. Point à confirmer avec les équipes, et à porter dans le dossier de généralisation.</p></div>
+      <div class="card"><h4>Données personnelles et RGPD</h4><p class="small">Les quatre parcours sont fictifs, aucune donnée de santé individuelle n'est traitée, aucun hébergement HDS n'est requis. Les coordonnées nominatives figurant dans le kit DAC ne sont pas reprises ici et ne peuvent pas être republiées sans accord des personnes concernées.</p></div>
+    </div>
+
+    <div class="card soft" style="margin-top:28px">
+      <h4>Contribuer au recensement</h4>
+      <p class="small">Le socle est un fichier ouvert, <code>dispositifs.json</code>, versionné dans le dépôt. Toute correction ou ajout se fait par une proposition de modification sur ce fichier. Chaque entrée porte sa source et son degré de localisation.</p>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">
+  <p class="trip">Pas une vitrine. Une fabrique.<br>Pas une tour d'ivoire. Un terrain d'expérimentation.<br>Pas une promesse. Un outil au service de l'action.</p>
+  <p class="small" style="margin-top:24px">CIUS — Centre d'Innovation et d'Usages en Santé · Nice, Marseille, Paris<br>Projet accompagné dans le cadre du dispositif Article 51</p>
+  <p class="micro" style="margin-top:14px">Support de restitution, version de travail. Recensement non exhaustif, à consolider avec les acteurs du territoire. Fonds de carte © OpenStreetMap et Esri.</p>
+</div></footer>
+
+<script src="leaflet.js"></script>
+<script>if(typeof L==="undefined"){document.write('<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"><\/script>')}</script>
+<script src="app.js"></script>
+</body>
+</html>
