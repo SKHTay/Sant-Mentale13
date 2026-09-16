@@ -1,4 +1,4 @@
-Cartographie de l'écosystème santé mentale — Marseille.
+Cartographie de l'écosystème santé mentale à Marseille.
 Expérimentation SIIS Santé mentale, Article 51, ARS PACA. Produit par le CIUS.
 
 Tous les fichiers sont à la racine du dépôt : index.html charge les données en
@@ -21,7 +21,7 @@ DÉPLOIEMENT
 
 
 DONNÉES
-  dispositifs.json                  101 dispositifs — 44 avec implantation, 34 avec adresse
+  dispositifs.json                  101 dispositifs, dont 44 avec implantation, 34 avec adresse
                                     complète, 30 connus mais non localisés
   dispositifs.csv                   même socle, source éditable en tableur (point-virgule, UTF-8 BOM)
   contenu.json                      taxonomie (8 domaines, 4 niveaux, 6 catégories), 4 parcours
@@ -35,7 +35,7 @@ DONNÉES
 
 
 SCRIPTS
-  build_dispositifs.py              dispositifs.csv -> dispositifs.json, avec validation
+  build_dispositifs.py              dispositifs.csv vers dispositifs.json, avec validation
   run_tests.py                      12 contrôles d'intégrité avant publication
 
       python3 build_dispositifs.py dispositifs.csv dispositifs.json contenu.json
@@ -105,8 +105,8 @@ Rouge et hachuré
 
 Dans la matrice de couverture, deux absences qui ne disent pas la même chose :
 
-  rouge     aucun dispositif ancré sur ce territoire — information sur le territoire
-  hachuré   dispositif connu mais implantation non documentée — information sur
+  rouge     aucun dispositif ancré sur ce territoire. Information sur le territoire
+  hachuré   dispositif connu mais implantation non documentée. Information sur
             l'état du recensement
 
 Les confondre ferait dire à la carte plus que ce qu'elle sait. Le bloc
@@ -188,7 +188,7 @@ SOURCES
 
 CRÉDITS
 
-CIUS — Centre d'Innovation et d'Usages en Santé. Nice, Marseille, Paris.
+CIUS, Centre d'Innovation et d'Usages en Santé. Nice, Marseille, Paris.
 Projet accompagné dans le cadre du dispositif Article 51.
 Leaflet 1.9.4, licence BSD 2-Clause.
 

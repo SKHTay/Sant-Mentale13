@@ -124,7 +124,6 @@ tr:hover td{background:var(--bg-alt)}
 .bar{height:8px;border-radius:var(--radius-pill);background:var(--cius-line-soft);overflow:hidden;margin-top:6px}
 .bar i{display:block;height:100%;background:var(--cius-violet)}
 footer{background:var(--bg-alt);border-top:1px solid var(--cius-line);padding:40px 0 48px;margin-top:0}
-.trip{font-family:var(--font-display);font-weight:700;font-size:20px;line-height:1.4}
 @media(max-width:900px){.layout{grid-template-columns:1fr}.rail{position:static}h1{font-size:32px}h2{font-size:25px}.wrap{padding:0 18px}.mx{grid-template-columns:minmax(0,130px) repeat(4,minmax(0,1fr))}.mxl{font-size:12px}}
 
 /* ===== Additions pour la version déployée ===== */
@@ -151,3 +150,19 @@ code{font-family:var(--font-mono);font-size:12px;background:var(--cius-line-soft
 .fallback{padding:44px 32px;text-align:center;font-size:14px;line-height:1.7;color:var(--fg-2);
   background:var(--bg-alt);border:1px dashed var(--cius-line);border-radius:var(--radius-md)}
 #loader code{background:var(--cius-line-soft)}
+
+/* dernier enfant d'une carte : plus de marge basse résiduelle */
+.card > *:last-child, .stat > *:last-child, .panel > *:last-child{margin-bottom:0}
+footer .small:first-child{margin-top:0}
+
+/* matrice cliquable */
+.cl{cursor:pointer;transition:transform var(--dur) var(--ease),box-shadow var(--dur) var(--ease);position:relative}
+.cl:hover{transform:translateY(-2px);box-shadow:var(--shadow-1)}
+.cl.vide{cursor:default}
+.cl.vide:hover{transform:none;box-shadow:none}
+.cl.sel{outline:2.5px solid var(--cius-violet);outline-offset:1px}
+#matrix-detail:empty{display:none}
+.detail-head{display:flex;justify-content:space-between;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:6px}
+.closebtn{font-size:12px;color:var(--fg-3);cursor:pointer;border:1px solid var(--cius-line);
+  border-radius:var(--radius-pill);padding:3px 11px;background:#fff}
+.closebtn:hover{border-color:var(--cius-violet-soft);color:var(--cius-violet-deep)}

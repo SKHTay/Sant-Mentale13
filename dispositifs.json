@@ -1,6 +1,6 @@
 {
  "meta": {
-  "titre": "Cartographie de l'écosystème santé mentale — Marseille",
+  "titre": "Cartographie de l'écosystème santé mentale à Marseille",
   "perimetre": "Marseille intra-muros",
   "maj": "2026-09-15",
   "sources": [
@@ -12,7 +12,7 @@
  },
  "dispositifs": [
   {
-   "n": "EMI — Équipe Mobile Inclusive",
+   "n": "EMI, Équipe Mobile Inclusive",
    "p": "CMSMH",
    "c": "medicosocial",
    "dm": [
@@ -38,7 +38,7 @@
    "src": "Kit DAC 13 Sud, 07/05/2026"
   },
   {
-   "n": "SIDIIS — Suivi Intensif pour la DésInstitutionnalisation et l'Inclusion Sociale",
+   "n": "SIDIIS, Suivi Intensif pour la DésInstitutionnalisation et l'Inclusion Sociale",
    "p": "Groupe SOS Solidarités",
    "c": "medicosocial",
    "dm": [
@@ -105,7 +105,7 @@
    "src": "Kit DAC 13 Sud, 07/05/2026"
   },
   {
-   "n": "CMP Lafon — service du Dr Chabannes",
+   "n": "CMP Lafon, service du Dr Chabannes",
    "p": "AP-HM",
    "c": "sanitaire",
    "dm": [
@@ -125,7 +125,7 @@
    "src": "Kit DAC 13 Sud, 07/05/2026"
   },
   {
-   "n": "CMP Lafon — service du Dr Dassa",
+   "n": "CMP Lafon, service du Dr Dassa",
    "p": "AP-HM",
    "c": "sanitaire",
    "dm": [
@@ -146,7 +146,7 @@
    "src": "Kit DAC 13 Sud, 07/05/2026"
   },
   {
-   "n": "CMP Lafon — service du Dr Zendjidjian",
+   "n": "CMP Lafon, service du Dr Zendjidjian",
    "p": "AP-HM",
    "c": "sanitaire",
    "dm": [
@@ -479,7 +479,7 @@
    "src": "Kit DAC 13 Sud, 07/05/2026"
   },
   {
-   "n": "CAP 48 — urgences psychiatriques",
+   "n": "CAP 48, urgences psychiatriques",
    "p": "AP-HM La Timone",
    "c": "sanitaire",
    "dm": [
@@ -513,7 +513,7 @@
    "src": "Kit DAC 13 Sud, 07/05/2026"
   },
   {
-   "n": "CAP 72 — urgences psychiatriques",
+   "n": "CAP 72, urgences psychiatriques",
    "p": "AP-HM Hôpital Nord / CH Édouard Toulouse",
    "c": "sanitaire",
    "dm": [
@@ -547,7 +547,7 @@
    "src": "Kit DAC 13 Sud, 07/05/2026"
   },
   {
-   "n": "CACC — Centre d'Accueil et de Consultation de Crise",
+   "n": "CACC, Centre d'Accueil et de Consultation de Crise",
    "p": "CH Valvert",
    "c": "sanitaire",
    "dm": [
@@ -567,7 +567,7 @@
    "src": "Kit DAC 13 Sud, 07/05/2026"
   },
   {
-   "n": "ULICE — unité locale d'intervention de crise",
+   "n": "ULICE, unité locale d'intervention de crise",
    "p": "AP-HM",
    "c": "sanitaire",
    "dm": [
@@ -682,7 +682,7 @@
    "specif": true
   },
   {
-   "n": "MARSS — équipe mobile psychiatrie précarité",
+   "n": "MARSS, équipe mobile psychiatrie précarité",
    "p": "AP-HM",
    "c": "medicosocial",
    "dm": [
@@ -763,7 +763,7 @@
    "src": "Kit DAC 13 Sud, 07/05/2026"
   },
   {
-   "n": "EDI — équipe Diogène et incurie",
+   "n": "EDI, équipe Diogène et incurie",
    "p": "CMSMH",
    "c": "medicosocial",
    "dm": [
@@ -797,7 +797,7 @@
    "src": "Kit DAC 13 Sud, 07/05/2026"
   },
   {
-   "n": "ESAMH — équipe santé mentale et habitat",
+   "n": "ESAMH, équipe santé mentale et habitat",
    "p": "CMSMH",
    "c": "medicosocial",
    "dm": [
@@ -830,7 +830,7 @@
    "src": "SIIS Cartographie de l'offre, 11/05/2026"
   },
   {
-   "n": "LEAF — désinstitutionnalisation par les loisirs",
+   "n": "LEAF, désinstitutionnalisation par les loisirs",
    "p": "AP-HM Sainte-Marguerite",
    "c": "social",
    "dm": [
@@ -852,7 +852,7 @@
    "src": "Kit DAC 13 Sud, 07/05/2026"
   },
   {
-   "n": "CLIP — centre local d'intervention précoce",
+   "n": "CLIP, centre local d'intervention précoce",
    "p": "AP-HM",
    "c": "sanitaire",
    "dm": [
@@ -1281,7 +1281,7 @@
    "src": "Kit DAC 13 Sud, 07/05/2026"
   },
   {
-   "n": "GEM LEO — Lieu d'Échange et d'Ouverture",
+   "n": "GEM LEO, Lieu d'Échange et d'Ouverture",
    "p": "Association SARA",
    "c": "entraide",
    "dm": [
@@ -1462,7 +1462,7 @@
    "specif": true
   },
   {
-   "n": "ESPER Pro — pair-aidance",
+   "n": "ESPER Pro, pair-aidance",
    "p": "ESPER Pro",
    "c": "entraide",
    "dm": [
@@ -1497,7 +1497,7 @@
    "specif": true
   },
   {
-   "n": "CoFoR — centre de formation au rétablissement",
+   "n": "CoFoR, centre de formation au rétablissement",
    "p": "CoFoR",
    "c": "entraide",
    "dm": [
@@ -1638,7 +1638,7 @@
    "src": "Kit DAC 13 Sud, 07/05/2026"
   },
   {
-   "n": "A3 — Aide aux aidants",
+   "n": "A3, Aide aux aidants",
    "p": "Association A3",
    "c": "entraide",
    "dm": [
@@ -2374,7 +2374,7 @@
    "lacune": true
   },
   {
-   "n": "ACT 13 — appartements de coordination thérapeutique",
+   "n": "ACT 13, appartements de coordination thérapeutique",
    "p": "ACT 13",
    "c": "logement",
    "dm": [
@@ -2759,7 +2759,7 @@
    "lacune": true
   },
   {
-   "n": "ASUD — bus itinérant",
+   "n": "ASUD, bus itinérant",
    "p": "ASUD",
    "c": "medicosocial",
    "dm": [
@@ -2862,7 +2862,7 @@
    "lacune": true
   },
   {
-   "n": "Mesures de protection — tutelle, curatelle, MASP",
+   "n": "Mesures de protection, tutelle, curatelle, MASP",
    "p": "Opérateurs multiples",
    "c": "social",
    "dm": [

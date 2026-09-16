@@ -1,5 +1,5 @@
-/* Cartographie de l'écosystème santé mentale — Marseille
-   CIUS — Centre d'Innovation et d'Usages en Santé
+/* Cartographie de l'écosystème santé mentale à Marseille
+   CIUS, Centre d'Innovation et d'Usages en Santé
    Données chargées depuis dispositifs.json et arrondissements-marseille.geojson */
 
 (function () {
@@ -13,7 +13,7 @@ var MANQUE = [];
 
 var S = {
   niv:new Set([1,2,3,4]), dom:new Set(), cat:new Set(), typ:new Set(["lieu","mobile","reseau"]),
-  mode:"carte", base:"clair", arr:null, couvArr:null, parc:null
+  mode:"carte", base:"clair", arr:null, couvArr:null, cell:null, parc:null
 };
 
 var $ = function (s) { return document.querySelector(s); };
@@ -24,7 +24,7 @@ function esc(s){ return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").rep
 /* ---------- chargement ---------- */
 function loadJSON(url){
   return fetch(url, {cache:"no-cache"}).then(function(r){
-    if(!r.ok) throw new Error(url + " — " + r.status);
+    if(!r.ok) throw new Error(url + " : erreur " + r.status);
     return r.json();
   });
 }
@@ -51,7 +51,7 @@ function boot(){
   Object.keys(CATEGORIES).forEach(function(k){ S.cat.add(k); });
   S.parc = PARCOURS[0].id;
 
-  buildNav(); buildFilters(); buildModes(); buildLegend(); buildCouvChoix();
+  buildNav(); buildFilters(); buildModes(); buildLegend(); buildCouvChoix(); brancherMatrice();
   buildSynthese(); buildParcours(); buildIrritants();
   initMap(); render();
 
@@ -245,12 +245,12 @@ function drawList(){
   var t = $("#tbody"); t.innerHTML = "";
   DISPOSITIFS.filter(match).sort(function(x,y){ return x.n.localeCompare(y.n,"fr"); }).forEach(function(d){
     var cov = (d.cov||[]).length === 16 ? "tout Marseille"
-            : ((d.cov||[]).map(function(a){ return ord(a); }).join(", ") || "—");
+            : ((d.cov||[]).map(function(a){ return ord(a); }).join(", ") || "non renseignée");
     t.appendChild(el("tr","",
       "<td><span class='dn'>" + esc(d.n) + "</span><br><span class='dp'>" + esc(d.p) + "</span></td>" +
       "<td class='small'>" + CATEGORIES[d.c] + "</td>" +
       "<td class='small'>" + d.lv.join(", ") + "</td>" +
-      "<td class='small'>" + (d.a ? ord(d.a) + " arr." : (d.lacune ? "<span class='chip warn'>non localisé</span>" : "—")) + "</td>" +
+      "<td class='small'>" + (d.a ? ord(d.a) + " arr." : (d.lacune ? "<span class='chip warn'>non localisé</span>" : "non renseignée")) + "</td>" +
       "<td class='small'>" + cov + "</td>"));
   });
 }
@@ -277,14 +277,14 @@ function drawPanel(){
    "<div class='panel'><div style='display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap'>" +
    "<h3>" + ord(a) + " arrondissement</h3>" +
    "<span class='chip " + (siis ? "violet" : "warn") + "'>" + (siis ? "couvert par une équipe SIIS" : "hors périmètre SIIS") + "</span></div>" +
-   "<div class='blk'><p class='blkh' style='color:#1D7A52'>Implantés ici — " + ici.length + "</p>" + rows(ici) + "</div>" +
-   "<div class='blk'><p class='blkh' style='color:#1F94B7'>Interviennent ici depuis ailleurs — " + dehors.length + "</p>" + rows(dehors) + "</div>" +
-   "<div class='blk'><p class='blkh' style='color:#B4302F'>Ne couvrent pas cet arrondissement — " + absents.length + "</p>" +
+   "<div class='blk'><p class='blkh' style='color:#1D7A52'>Implantés ici : " + ici.length + "</p>" + rows(ici) + "</div>" +
+   "<div class='blk'><p class='blkh' style='color:#1F94B7'>Interviennent ici depuis ailleurs : " + dehors.length + "</p>" + rows(dehors) + "</div>" +
+   "<div class='blk'><p class='blkh' style='color:#B4302F'>Ne couvrent pas cet arrondissement : " + absents.length + "</p>" +
      (absents.length ? absents.map(function(d){
         return "<div class='row'><span>" + esc(d.n) + "</span><em>" +
                (d.cov||[]).map(function(x){ return ord(x); }).join(", ") + "</em></div>"; }).join("")
       : "<p class='small' style='margin:4px 0 0;color:var(--cius-mute)'>Aucun.</p>") + "</div>" +
-   "<div class='blk'><p class='blkh' style='color:#5733C9'>Ressources à l'échelle de la ville — " + partout.length + "</p>" +
+   "<div class='blk'><p class='blkh' style='color:#5733C9'>Ressources à l'échelle de la ville : " + partout.length + "</p>" +
      "<div class='chips'>" + partout.map(function(d){
         return "<span class='chip" + (d.lacune ? " warn" : "") + "'>" + esc(d.n) + "</span>"; }).join("") + "</div></div>" +
    "<p class='micro' style='margin-top:16px'>Le comptage territorial ne retient que les dispositifs implantés sur place ou rattachés au secteur. " +
@@ -309,30 +309,93 @@ function buildCouvChoix(){
   choix.forEach(function(c){
     var on = (S.couvArr === null && c[0] === "all") || String(S.couvArr) === c[0];
     var p = el("span", "pill" + (on ? " on" : ""), c[1]);
-    p.onclick = function(){ S.couvArr = (c[0]==="all") ? null : parseInt(c[0],10); buildCouvChoix(); drawMatrix(); };
+    p.onclick = function(){
+      S.couvArr = (c[0]==="all") ? null : parseInt(c[0],10);
+      S.cell = null; buildCouvChoix(); drawMatrix();
+    };
     h.appendChild(p);
   });
 }
 function drawMatrix(){
   var m = $("#matrix"); if(!m) return;
-  var pool = (S.couvArr === null) ? DISPOSITIFS
-           : DISPOSITIFS.filter(function(d){ return ancre(d, S.couvArr) || d.lacune; });
+  var pool = poolCouv();
   var html = "<span></span>" + [1,2,3,4].map(function(n){
     return "<span class='mxh'>" + NIVEAUX[n].replace("Besoin ","") + "</span>"; }).join("");
   Object.keys(DOMAINES).forEach(function(k){
     html += "<span class='mxl'>" + DOMAINES[k] + "</span>";
     [1,2,3,4].forEach(function(n){
-      var hits = pool.filter(function(d){ return d.dm.indexOf(k) > -1 && d.lv.indexOf(n) > -1; });
+      var hits = cellule(pool, k, n);
       var loc = hits.filter(function(d){ return d.a !== null; });
       var cls, val;
-      if(hits.length === 0){ cls = "z"; val = "0"; }
+      if(hits.length === 0){ cls = "z vide"; val = "0"; }
       else if(loc.length === 0){ cls = "h"; val = hits.length; }
       else if(loc.length <= 2){ cls = "a"; val = loc.length; }
       else { cls = "b"; val = loc.length; }
-      html += "<span class='cl " + cls + "' title='" + esc(hits.map(function(d){ return d.n; }).join(" · ")) + "'>" + val + "</span>";
+      if(S.cell && S.cell[0] === k && S.cell[1] === n) cls += " sel";
+      var titre = hits.length ? "Voir les " + hits.length + " dispositifs" : "Aucun dispositif";
+      html += "<span class='cl " + cls + "' data-dom='" + k + "' data-niv='" + n +
+              "' role='button' tabindex='0' title='" + titre + "'>" + val + "</span>";
     });
   });
   m.innerHTML = html;
+  drawCellule();
+}
+function poolCouv(){
+  return (S.couvArr === null) ? DISPOSITIFS
+       : DISPOSITIFS.filter(function(d){ return ancre(d, S.couvArr) || d.lacune; });
+}
+function cellule(pool, k, n){
+  return pool.filter(function(d){ return d.dm.indexOf(k) > -1 && d.lv.indexOf(n) > -1; });
+}
+function drawCellule(){
+  var h = $("#matrix-detail"); if(!h) return;
+  if(!S.cell){ h.innerHTML = ""; return; }
+  var k = S.cell[0], n = S.cell[1];
+  var hits = cellule(poolCouv(), k, n);
+  if(!hits.length){ h.innerHTML = ""; S.cell = null; return; }
+
+  var situes = hits.filter(function(d){ return d.a !== null; });
+  var flous  = hits.filter(function(d){ return d.a === null; });
+  var ou = (S.couvArr === null) ? "tout Marseille" : ord(S.couvArr) + " arrondissement";
+
+  function ligne(d){
+    var det = d.ad ? d.ad : (d.a !== null ? ord(d.a) + " arrondissement" : "implantation non documentée");
+    var cov = (d.cov || []).length === 16 ? "tout Marseille"
+            : (d.cov || []).map(function(x){ return ord(x); }).join(", ");
+    return "<div class='row'><span>" + esc(d.n) +
+           "<br><span class='dp'>" + esc(d.p) + " · " + CATEGORIES[d.c] + "</span></span>" +
+           "<em>" + esc(det) + "<br>couvre " + (cov || "non renseignée") + "</em></div>";
+  }
+
+  h.innerHTML = "<div class='panel'><div class='detail-head'>" +
+    "<h3 style='font-size:20px'>" + DOMAINES[k] + ", " + NIVEAUX[n].toLowerCase() + "</h3>" +
+    "<span class='closebtn' id='cell-close'>Fermer</span></div>" +
+    "<p class='small'>" + hits.length + " dispositif" + (hits.length > 1 ? "s" : "") +
+    " sur " + ou + ", dont " + situes.length + " localisé" + (situes.length > 1 ? "s" : "") + ".</p>" +
+    (situes.length ? "<div class='blk'><p class='blkh' style='color:#1D7A52'>Localisés : " +
+      situes.length + "</p>" + situes.map(ligne).join("") + "</div>" : "") +
+    (flous.length ? "<div class='blk'><p class='blkh' style='color:#7A5B00'>Connus mais non localisés : " +
+      flous.length + "</p>" + flous.map(ligne).join("") + "</div>" : "") +
+    "<p class='micro' style='margin-top:14px'>Le chiffre de la case ne compte que les dispositifs localisés. " +
+    "Les autres existent mais leur implantation n'est pas documentée dans les sources disponibles.</p></div>";
+
+  var b = $("#cell-close");
+  if(b) b.onclick = function(){ S.cell = null; drawMatrix(); };
+}
+
+function brancherMatrice(){
+  var m = $("#matrix");
+  function ouvrir(t){
+    if(!t || !t.classList.contains("cl") || t.classList.contains("vide")) return;
+    var k = t.getAttribute("data-dom"), n = parseInt(t.getAttribute("data-niv"), 10);
+    S.cell = (S.cell && S.cell[0] === k && S.cell[1] === n) ? null : [k, n];
+    drawMatrix();
+    if(S.cell) $("#matrix-detail").scrollIntoView({ behavior:"smooth", block:"nearest" });
+  }
+  m.addEventListener("click", function(e){ ouvrir(e.target.closest(".cl")); });
+  m.addEventListener("keydown", function(e){
+    if(e.key === "Enter" || e.key === " "){ e.preventDefault(); ouvrir(e.target.closest(".cl")); }
+  });
 }
 
 /* ---------- parcours ---------- */
